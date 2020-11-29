@@ -1,0 +1,114 @@
+
+
+<!--   inkomst : dynamiskt: värdet
+       kostnad: dynamiskt: värdet 
+       
+       
+       vinst : dynamisk: vinst
+
+       select-> 2 options
+       två input fält -> en med beskrivning/text, value/number 
+       add button 
+
+
+       
+       
+       inkomstLista:  dynamisk: data i listan ska komma från användare 
+
+
+       kostnadlista: dynamisk: data i listan ska komma från användare
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+
+<script src="app.js" defer></script>
+
+
+</head>
+<body>
+
+     <div class="inkomst">
+         <h2>  Inkomst : </h2>
+          <span class="inkomstData"> <!--  innerText  -->  </span>
+
+           
+     </div>
+
+     <div class="kostnad">
+         <h2> Kostnad :</h2>
+         <span class="kostnadData"> <!--  innerText  -->  </span>
+
+     </div>
+
+
+    <div class="Vinst">
+        <h2>  Vinst/Forlust: </h2>
+
+        <span class="vinstData">  <!--  innerText  -->    </span>
+         
+    </div>
+
+
+
+<form>
+    <select id="selectOption">
+        <option value="+"> + </option>
+        <option value="-"> - </option>
+    </select>
+    <input type="text"  id="description"  required     placeholder="beskriv ">
+    <input type="number"  id="value"      required     placeholder="lägg till value">
+
+    <button class="add">Add</button>
+
+</form>
+
+
+<div class="InkomstLista">
+    <h2 >  InkomstLista : </h2>
+    <ul class="listaIncome">
+    
+    <!--  måste skapa en hel element med hjälp av js. Elementet ska ha 
+  beskrivning : value -->
+
+     <!-- skapa en li element för varje inmatning av kostnad 
+                pusha li in i ul
+        -->
+    </ul>
+      
+    <button class="rensa">Clean </button>
+
+
+
+
+</div>
+
+<div class="KostnadLista">
+    <h2>  KostnadLista : </h2>
+      
+    <ul class="listaKostnad">
+           <!-- skapa en li element för varje inmatning av kostnad 
+                pusha li in i ul
+        -->
+    </ul>
+   <!--  måste skapa en hel element med hjälp av js. Elementet ska ha 
+  beskrivning : value
+
+-->
+
+
+</div>
+
+
+
+
+</body>
+</html>
